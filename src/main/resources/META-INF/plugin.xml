@@ -1,0 +1,55 @@
+<idea-plugin>
+    <id>org.example.MyPlugin-2</id>
+    <name>wcy-plugins</name>
+    <vendor email="suppor@qq.com" url="http://www.qq.com">qq</vendor>
+
+    <description>描述啊啊啊啊啊啊啊描述啊啊啊啊啊啊啊描述啊啊啊啊啊啊啊描述啊啊啊啊啊啊啊描述啊啊啊啊啊啊啊</description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <group id="com.wcy.tools.plugins.text" text="wcy-plugins-text" description="文本处理">
+            <add-to-group group-id="JavaGenerateGroup1" anchor="first" />
+            <action id="com.simonalexs.tools.plugins.text.lineCopy.CopyToDownNumberAllPlusOne" class="com.simonalexs.tools.plugins.text.lineCopy.CopyToDownNumberAllPlusOne"
+                    text="CopyToDown Number All Plus One" description="CopyToDown Number All Plus One"  >
+            </action>
+            <action id="com.simonalexs.tools.plugins.text.lineCopy.CopyToDownNumberAllMinusOne" class="com.simonalexs.tools.plugins.text.lineCopy.CopyToDownNumberAllMinusOne"
+                    text="CopyToDown Number All Minus One" description="CopyToDown Number All Minus One" >
+            </action>
+            <action id="com.simonalexs.tools.plugins.text.lineCopy.CopyToDownNumberFisrtPlusOne" class="com.simonalexs.tools.plugins.text.lineCopy.CopyToDownNumberFisrtPlusOne"
+                    text="CopyToDown Number Fisrt Plus One" description="CopyToDown Number Fisrt Plus One"/>
+            <action id="com.simonalexs.tools.plugins.text.lineCopy.CopyToDownNumberFisrtMinusOne" class="com.simonalexs.tools.plugins.text.lineCopy.CopyToDownNumberFisrtMinusOne"
+                    text="CopyToDown Number Fisrt Minus One" description="CopyToDown Number Fisrt Minus One"/>
+            <action id="com.simonalexs.tools.plugins.text.lineCopy.CopyToDownNumberFinalPlusOne" class="com.simonalexs.tools.plugins.text.lineCopy.CopyToDownNumberFinalPlusOne"
+                    text="CopyToDown Number Final Plus One" description="CopyToDown Number Final Plus One"/>
+            <action id="com.simonalexs.tools.plugins.text.lineCopy.CopyToDownNumberFinalMinusOne" class="com.simonalexs.tools.plugins.text.lineCopy.CopyToDownNumberFinalMinusOne"
+                    text="CopyToDown Number Final Minus One" description="CopyToDown Number Final Minus One"/>
+
+            <action id="com.simonalexs.tools.plugins.text.textReplace.NumberPlusOne" class="com.simonalexs.tools.plugins.text.textReplace.NumberPlusOne"
+                    text="Number Plus One" description="Number Plus One" >
+                <keyboard-shortcut keymap="$default" first-keystroke="alt shift P"/>
+            </action>
+            <action id="com.simonalexs.tools.plugins.text.textReplace.NumberMinusOne" class="com.simonalexs.tools.plugins.text.textReplace.NumberMinusOne"
+                    text="Number Minus One" description="Number Minus One" >
+                <keyboard-shortcut keymap="$default" first-keystroke="alt shift M"/>
+            </action>
+        </group>
+        <!--<group id="com.wcy.tools.text.textReplace" text="wcy-text replace" description="文本替换" >
+            <add-to-group group-id="JavaGenerateGroup1" anchor="before" relative-to-action="CopyToDownNumberAllPlusOne" />
+        </group>-->
+
+
+<!--        <action id="NumberPlusOne" class="NumberPlusOne"-->
+<!--                text="Number Plus One" description="Number Plus One">-->
+<!--            <add-to-group group-id="JavaGenerateGroup1" anchor="fisrt"/>-->
+<!--            <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl E"/>-->
+<!--        </action>-->
+    </actions>
+</idea-plugin>
