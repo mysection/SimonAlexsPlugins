@@ -36,6 +36,11 @@ public abstract class BaseTextDeal extends MultiCaretCodeInsightAction {
 
     protected TextDealModeEnum textDealMode;
 
+
+    protected PsiFile file2;
+    protected Editor editor2;
+    protected Caret caret2;
+
     private void initProperties(Project project, Editor editor, Caret caret, PsiFile file) {
         this.project = project;
         this.editor = editor;
