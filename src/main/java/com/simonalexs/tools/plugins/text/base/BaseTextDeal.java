@@ -28,6 +28,10 @@ public abstract class BaseTextDeal extends MultiCaretCodeInsightAction {
     protected Caret caret;
     protected PsiFile file;
 
+    protected PsiFile file1;
+    protected Editor editor1;
+    protected Caret caret1;
+
     protected HashMap<String, Object> userObjects = new HashMap<>();
 
     protected TextDealModeEnum textDealMode;
